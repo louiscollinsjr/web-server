@@ -9,7 +9,7 @@ var middleware = require('./middleware.js');
 app.use(middleware.logger);
 
 app.get('/about', middleware.requireAuthenication, function(req, res) {
-    res.send('About Us.');
+    res.send('About Nada.');
 });
 
 app.use(express.static(__dirname+'/public'));
